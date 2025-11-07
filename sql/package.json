@@ -1,0 +1,13 @@
+{
+  "name": "sql-tasks",
+  "version": "1.0.0",
+  "description": "SQL tasks and sales prediction",
+  "main": "sales_prediction.js",
+  "scripts": {
+    "predict": "node sales_prediction.js"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.6"
+  }
+}
+
