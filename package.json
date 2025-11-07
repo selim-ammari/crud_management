@@ -1,0 +1,20 @@
+{
+  "name": "crud-management",
+  "version": "1.0.0",
+  "description": "Full-stack CRUD application for managing employees and devices",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node server.js",
+    "client": "cd client && npm run dev",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "kill-port": "lsof -ti:5002 | xargs kill -9 2>/dev/null || echo 'Port 5002 is already free'",
+    "seed": "node server/seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
